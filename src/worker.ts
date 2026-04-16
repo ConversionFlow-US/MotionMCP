@@ -63,6 +63,12 @@ export default {
         { headers: { "Content-Type": "application/json" } }
       );
     }
+    // Allow session message requests (sessionId itself provides security)
+    if (url.pathname.startsWith("/mcp/message")) {
+      return (
+        MotionMCPAgent.mount("/mcp") as { fetch: (req: Request, env: Env, ctx: ExecutionContext) => Promise<Response> }
+      ).fetch(request, env, ctx);
+    }
 
     // Validate secret path: /mcp/{secret}/...
     // Clients configure URL as: https://your-worker.workers.dev/mcp/YOUR_SECRET
