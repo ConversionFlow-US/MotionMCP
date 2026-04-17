@@ -3,7 +3,7 @@
 
 # Motion MCP Server
 
-[Motion](https://www.usemotion.com/) is an AI-powered calendar and task management app that auto-schedules your work. This MCP server bridges Motion's API with LLMs like Claude and ChatGPT via the [Model Context Protocol](https://modelcontextprotocol.io/docs/), so you can manage tasks, search projects, check your schedule, and more — all through natural conversation. It works on desktop, web, and mobile.
+[Motion](https://www.usemotion.com/) is an AI-powered calendar and task management app that auto-schedules your work. This MCP server bridges Motion's API with LLMs like Claude and ChatGPT via the [Model Context Protocol](https://modelcontextprotocol.io/docs/), so you can manage tasks, search projects, check your schedule, and more — all through natural conversation. It works on desktop, web, and mobile. 
 
 ## Preview
 
