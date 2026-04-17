@@ -67,4 +67,4 @@
     "worker:type-check": "tsc --noEmit -p tsconfig.worker.json",
     "prepublishOnly": "npm run type-check && npm run build"
   }
-}
+} 
